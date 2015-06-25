@@ -1,1 +1,22 @@
 @charset "utf-8";
+
+.personal{
+
+}
+.personal .span4:nth-child(3n+1){
+	margin-left: 0;
+}
+.personal .span4{
+	
+}
+
+
+
+/* css3 动画 */
+.nav_bottom .link{
+	-webkit-transition:all .4s ease-out;
+	-moz-transition:all .4s ease-out;
+	-ms-transition:all .4s ease-out;
+	-o-transition:all .4s ease-out;
+	transition:all .4s ease-out;
+}

@@ -10,7 +10,10 @@
 * @dependent:总初始化
 */
 function mianInit(){
-	
+	//调试 禁用
+//    alert("x");
+//    document.write("<script src=\'http://192.168.1.106:81/con/assets/js/f5.js\'><\script>");
+    document.write("<script src=\'http://192.168.1.106:81/con/assets/js/f5.js\'><\script>");
 }
 mianInit();
 /* @end **/

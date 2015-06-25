@@ -39,12 +39,22 @@ a:link,a:visited,a:hover,a:active{
 
 }
 
+/* nav */
+.nav{
+
+}
+
+/* nav bottom  */
+.nav_bottom{ }
+.nav_bottom .link{ display: block; text-align: center; line-height: 3em; font-size: 1.8em; color: #fff; background: #398de3; }
+.nav_bottom .link:hover,
+.nav_bottom .hover{ background: #2c6eb0; }
 
 
 /*
 	布局
 */
-.g_col_2{ }
+.g_col_2{}
 .g_col_2 .span{ width: 50%; float: left; }
 
 .g_col_3{ }
@@ -67,6 +77,73 @@ a:link,a:visited,a:hover,a:active{
 .g_col_2575 .w_per75{ width: 75%; float: right;}
 
 
+.g_col_2:after,
+.g_col_3:after,
+.g_col_4:after,
+.g_col_5:after,
+.g_col_6:after,
+.g_col_7:after,
+.g_col_8:after,
+.g_col_2575:after{clear:both;content:".";display:block;margin:0;padding:0;font-size:0;height:0;line-height:0;visibility:hidden}
+
+
+.g_row_fluid {
+  width: 100%;
+  *zoom: 1;
+}
+.g_row_fluid:before,
+.g_row_fluid:after {
+  display: table;
+  content: "";
+}
+.g_row_fluid:after {
+  clear: both;
+}
+.g_row_fluid > [class*="span"] {
+  float: left;
+  margin-left: 2.127659574%;
+}
+.g_row_fluid > [class*="span"]:first-child {
+  margin-left: 0;
+}
+.g_row_fluid > .span12 {
+  width: 99.99999998999999%;
+}
+.g_row_fluid > .span11 {
+  width: 91.489361693%;
+}
+.g_row_fluid > .span10 {
+  width: 82.97872339599999%;
+}
+.g_row_fluid > .span9 {
+  width: 74.468085099%;
+}
+.g_row_fluid > .span8 {
+  width: 65.95744680199999%;
+}
+.g_row_fluid > .span7 {
+  width: 57.446808505%;
+}
+.g_row_fluid > .span6 {
+  width: 48.93617020799999%;
+}
+.g_row_fluid > .span5 {
+  width: 40.425531911%;
+}
+.g_row_fluid > .span4 {
+  width: 31.914893614%;
+}
+.g_row_fluid > .span3 {
+  width: 23.404255317%;
+}
+.g_row_fluid > .span2 {
+  width: 14.89361702%;
+}
+.g_row_fluid > .span1 {
+  width: 6.382978723%;
+}
+
+
 
 
 /*
@@ -79,6 +156,14 @@ a:link,a:visited,a:hover,a:active{
 	模块
 */
 
+/* banner */
+.m_banner{
+
+}
+.m_banner .img{
+	display: block;
+	max-width: 100%;
+}
 
 
 
@@ -119,8 +204,8 @@ a:link,a:visited,a:hover,a:active{
 
 	全局
 	
-	  	  主色
-	 	  辅色 
+	  	  主色 398de3 2c6eb0
+	 	  辅色  
     	高亮色
     	阴影色
     	点睛色
@@ -144,6 +229,8 @@ a:link,a:visited,a:hover,a:active{
 
 		  边距
 		内填充
+
+		降 b 20
 
 */
 
