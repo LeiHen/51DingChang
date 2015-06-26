@@ -1,19 +1,70 @@
 @charset "utf-8";
 
-.personal{
+.personal{ margin-top: 2.127659574%; }
+.personal .span4:nth-child(3n+1){ margin-left: 0; }
+.personal .span4{ margin-bottom: 2.127659574%; }
 
-}
-.personal .span4:nth-child(3n+1){
-	margin-left: 0;
-}
-.personal .span4{
-	
-}
+.personal .name{ position: absolute; right: 8px; bottom: 8px; font-size: 1.4em; }
+.personal .u_msg{ position: absolute; top: 20px; right: 20px;  }
+
+.personal .signon{ }
+.personal .signon .title{ display: none; }
+.personal .signon .name{ display: block; }
+
+
+.personal .span4:nth-child(1){ background: #398de3; }
+.personal .span4:nth-child(1):hover{background: #2c6eb0;}
+
+.personal .span4:nth-child(2){ background:#37ba3a; }
+.personal .span4:nth-child(2):hover{background: #29872a;}
+
+.personal .span4:nth-child(3){ background: #ce5679; }
+.personal .span4:nth-child(3):hover{background: #9c415c;}
+
+.personal .span4:nth-child(4){ background: #7553e3; }
+.personal .span4:nth-child(4):hover{ background: #5b41b0;}
+
+.personal .span4:nth-child(5){ background: #ffce3d; }
+.personal .span4:nth-child(5):hover{background: #cca531;}
+
+.personal .span4:nth-child(6){ background: #34495e; }
+.personal .span4:nth-child(6):hover{background: #2c3e50;}
+
+.personal .span4:nth-child(7){ background: #f66a00; }
+.personal .span4:nth-child(7):hover{background: #c25400;}
+
+.personal .span4:nth-child(8){ background: #95a5a6; }
+.personal .span4:nth-child(8):hover{background: #7f8c8d;}
+
+.personal .span4:nth-child(9){ background:#1ABC9C; }
+.personal .span4:nth-child(9):hover{background: #16A085;}
+
+
+
+.bg_blue{background: #398de3;}
+.bg_blue:hover{background: #2c6eb0;}
+.bg_orange{background: #f66a00;}
+.bg_orange:hover{background: #c25400;}
+.bg_green{background:#37ba3a; }
+.bg_green:hover{background: #29872a;}
+.bg_pink{background: #ce5679;}
+.bg_pink:hover{background: #9c415c;}
+.bg_violet{background: #7553e3;}
+.bg_violet:hover{background: #5b41b0;}
+.bg_yellow{background: #ffce3d;}
+.bg_yellow:hover{background: #cca531;}
+.bg_darkblue{background: #34495e;}
+.bg_darkblue:hover{background: #2c3e50;}
+.bg_celadon{background: #95a5a6;}
+.bg_celadon:hover{background: #7f8c8d;}
+.bg_turquoise{background:#1ABC9C;}
+.bg_turquoise:hover{background: #16A085;}
 
 
 
 /* css3 动画 */
-.nav_bottom .link{
+.nav_bottom .link,
+.personal .span4:{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;

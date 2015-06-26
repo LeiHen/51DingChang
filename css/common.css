@@ -46,7 +46,7 @@ a:link,a:visited,a:hover,a:active{
 
 /* nav bottom  */
 .nav_bottom{ }
-.nav_bottom .link{ display: block; text-align: center; line-height: 3em; font-size: 1.8em; color: #fff; background: #398de3; }
+.nav_bottom .link{ display: block; text-align: center; line-height: 3.1em; font-size: 1.8em; color: #fff; background: #398de3; }
 .nav_bottom .link:hover,
 .nav_bottom .hover{ background: #2c6eb0; }
 
@@ -87,61 +87,24 @@ a:link,a:visited,a:hover,a:active{
 .g_col_2575:after{clear:both;content:".";display:block;margin:0;padding:0;font-size:0;height:0;line-height:0;visibility:hidden}
 
 
-.g_row_fluid {
-  width: 100%;
-  *zoom: 1;
-}
+.g_row_fluid { width: 100%; }
 .g_row_fluid:before,
-.g_row_fluid:after {
-  display: table;
-  content: "";
-}
-.g_row_fluid:after {
-  clear: both;
-}
-.g_row_fluid > [class*="span"] {
-  float: left;
-  margin-left: 2.127659574%;
-}
-.g_row_fluid > [class*="span"]:first-child {
-  margin-left: 0;
-}
-.g_row_fluid > .span12 {
-  width: 99.99999998999999%;
-}
-.g_row_fluid > .span11 {
-  width: 91.489361693%;
-}
-.g_row_fluid > .span10 {
-  width: 82.97872339599999%;
-}
-.g_row_fluid > .span9 {
-  width: 74.468085099%;
-}
-.g_row_fluid > .span8 {
-  width: 65.95744680199999%;
-}
-.g_row_fluid > .span7 {
-  width: 57.446808505%;
-}
-.g_row_fluid > .span6 {
-  width: 48.93617020799999%;
-}
-.g_row_fluid > .span5 {
-  width: 40.425531911%;
-}
-.g_row_fluid > .span4 {
-  width: 31.914893614%;
-}
-.g_row_fluid > .span3 {
-  width: 23.404255317%;
-}
-.g_row_fluid > .span2 {
-  width: 14.89361702%;
-}
-.g_row_fluid > .span1 {
-  width: 6.382978723%;
-}
+.g_row_fluid:after { display: table; content: ""; }
+.g_row_fluid:after { clear: both; }
+.g_row_fluid > [class*="span"] { float: left; margin-left: 2.127659574%; }
+.g_row_fluid > [class*="span"]:first-child { margin-left: 0; }
+.g_row_fluid > .span12 { width: 99.99999998999999%; }
+.g_row_fluid > .span11 { width: 91.489361693%; }
+.g_row_fluid > .span10 { width: 82.97872339599999%; }
+.g_row_fluid > .span9 { width: 74.468085099%; }
+.g_row_fluid > .span8 { width: 65.95744680199999%; }
+.g_row_fluid > .span7 { width: 57.446808505%; }
+.g_row_fluid > .span6 { width: 48.93617020799999%; }
+.g_row_fluid > .span5 { width: 40.425531911%; }
+.g_row_fluid > .span4 { width: 31.914893614%; }
+.g_row_fluid > .span3 { width: 23.404255317%; }
+.g_row_fluid > .span2 { width: 14.89361702%; }
+.g_row_fluid > .span1 { width: 6.382978723%; }
 
 
 
@@ -150,6 +113,23 @@ a:link,a:visited,a:hover,a:active{
 	元件
 */
 
+/* 提示起泡 */
+.u_msg{ background: rgba(231,76,60,1); border-radius:50%; width: 16px; height: 16px; text-align: center; color: #fff; font-size: 1em; line-height: 16px; display: none; }
+.e_msg_exist{ display: block; }
+
+/* 标题 */
+.u_title{
+	font-size: 2em;
+	line-height: 2.4em;
+	background: #398de3;
+	color: #fff;
+	text-align: center;
+}
+
+
+/*  */
+
+
 
 
 /*
@@ -157,15 +137,62 @@ a:link,a:visited,a:hover,a:active{
 */
 
 /* banner */
-.m_banner{
+.m_banner{ }
+.m_banner .img{ display: block; width: 100%; }
+
+
+/* box */
+.m_box{ position:relative; color: #fff; display: block; }
+.m_box::before{ content: ""; margin-top: 100%; display: block; }
+.m_box .title,
+.m_box .icon{ position: absolute; }
+.m_box .title{ right: 8px; bottom: 8px; font-size: 1.4em; }
+.m_box .icon{ top: 0; bottom: 0; left: 0; right: 0; margin:auto; display: block; margin:auto; display: table; width: 100%; height: 100%; text-align: center; font-size: 3.8em; }
+
+/* 列表 */
+.m_itme{
+	
+}
+.m_itme .title{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #e2e2e2;
+	font-size: 1.6em;
+	line-height: 1em;
+	font-weight: none;
+	color: #323232;
+}
+.m_itme .title .icon{
 
 }
-.m_banner .img{
+.m_itme .centent{
+	/*padding: 10px;*/
+}
+
+
+/* 列表 展开 */
+.m_itme_unfold{
+	border-top: 1px solid #bababa;
+	border-bottom: 1px solid #bababa;
+	position: relative;
+}
+.m_itme_unfold .title{
+	/*padding: 20px 0;*/
+	font-size: 1.8em;
+	line-height: 60px;
+	font-weight: 400;
+}
+.m_itme_unfold .link{
 	display: block;
-	max-width: 100%;
+	position: absolute;
+	right: 10px;
+	/*top: 20px;*/
+	font-size: 3em;
+	/*transform: */
 }
-
-
+.m_itme_unfold .link:hover{
+	
+}
 
 /*
 	功能
@@ -178,7 +205,10 @@ a:link,a:visited,a:hover,a:active{
 */
 
 
-
+/* 
+	sign up 注册
+	sign on 登陆
+*/
 
 
 
