@@ -64,7 +64,10 @@
 
 /* css3 动画 */
 .nav_bottom .link,
-.personal .span4:{
+.personal .span4,
+.m_itme_unfold .link,
+.m_itme_unfold,
+.u_btn{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
