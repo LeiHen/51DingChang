@@ -41,25 +41,17 @@
 
 
 
-.bg_blue{background: #398de3;}
-.bg_blue:hover{background: #2c6eb0;}
-.bg_orange{background: #f66a00;}
-.bg_orange:hover{background: #c25400;}
-.bg_green{background:#37ba3a; }
-.bg_green:hover{background: #29872a;}
-.bg_pink{background: #ce5679;}
-.bg_pink:hover{background: #9c415c;}
-.bg_violet{background: #7553e3;}
-.bg_violet:hover{background: #5b41b0;}
-.bg_yellow{background: #ffce3d;}
-.bg_yellow:hover{background: #cca531;}
-.bg_darkblue{background: #34495e;}
-.bg_darkblue:hover{background: #2c3e50;}
-.bg_celadon{background: #95a5a6;}
-.bg_celadon:hover{background: #7f8c8d;}
-.bg_turquoise{background:#1ABC9C;}
-.bg_turquoise:hover{background: #16A085;}
 
+
+
+
+/* stadium_detail */
+.stadium_detail{
+
+}
+.stadium_detail .map{
+	height: 300px;
+}
 
 
 /* css3 动画 */
@@ -67,7 +59,10 @@
 .personal .span4,
 .m_itme_unfold .link,
 .m_itme_unfold,
-.u_btn{
+.u_btn,
+.m_itme_unfolddownm,
+.m_itme_unfolddown .title,
+.m_itme_unfolddown .title .icon{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
