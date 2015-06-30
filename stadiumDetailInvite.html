@@ -51,11 +51,11 @@
             <!-- banner [[ -->
             <div class="m_banner">
                 <ul>
-                    <li><img src="images/banner/stadium/img_001_640x360@2x.jpg" alt="" title=""></li>
-                    <li><img src="images/banner/stadium/img_002_640x360@2x.jpg" alt="" title=""></li>
-                    <li><img src="images/banner/stadium/img_003_640x360@2x.jpg" alt="" title=""></li>
-                    <li><img src="images/banner/stadium/img_004_640x360@2x.jpg" alt="" title=""></li>
-                    <li><img src="images/banner/stadium/img_005_640x360@2x.jpg" alt="" title=""></li>
+                    <li><img src="images/banner/stadium/img_001_640x360@2x.jpg" alt="金海花园篮球馆" title=""></li>
+                    <li><img src="images/banner/stadium/img_002_640x360@2x.jpg" alt="侧面" title=""></li>
+                    <li><img src="images/banner/stadium/img_003_640x360@2x.jpg" alt="正面" title=""></li>
+                    <li><img src="images/banner/stadium/img_004_640x360@2x.jpg" alt="设备" title=""></li>
+                    <li><img src="images/banner/stadium/img_005_640x360@2x.jpg" alt="厕所" title=""></li>
                 </ul>
             </div>
             <!-- banner ]] -->
@@ -63,58 +63,42 @@
             <h1 class="name p10">金海花园室内足球场</h1>
             
             <!-- btn [[ -->
-            <div class="function p10">
-                <a href="stadiumReservation.html" class="u_btn e_btn_orange mb10">预约场地</a>
+            <div class="function p10 mb10 invite_box">
+                <div class="u_btn e_btn_orange u_btn_accumulative invite_btn" id="inviteBtn">
+                    邀请入驻
+                    <input type="checkbox" class="" value="0">
+                    <span class="hint plus">+1</span>
+                    <span class="hint original">+0</span>
+                </div>
             </div>
             <!-- btn ]] -->
             
             <div>
-       
-                <!-- 位置 [[ -->
+                <!-- 主要 [[ -->        
                 <div class="m_itme_unfolddown">
                     <h3 class="title plr10">位置 <span class="icon icon_direction_right"></span></h3>
                     <div class="centent p10">
                         天河区番东西路38号
                     </div>
+
                 </div>
-                <!-- 位置 ]] -->
-                
-                <!-- 地图 [[ -->
+
                 <div class="m_itme_unfolddown">
                     <h3 class="title plr10">地图<span class="icon icon_direction_right"></span></h3>
                     <div class="centent map" id="dituContent"></div>
                 </div>
-                <!-- 地图 ]] -->
-                
-                <!-- 联系方式 [[ -->
+
                 <div class="m_itme_unfolddown">
-                    <h3 class="title plr10">联系<span class="icon icon_direction_right"></span></h3>
+                    <h3 class="title plr10">联系方式<span class="icon icon_direction_right"></span></h3>
                     <div class="centent p10">
                         <a href="tel:020-37325592">020-37325592</a>
                     </div>
                 </div>
-                <!-- 联系方式 ]] -->
-                
-                <!-- 评论 [[ -->
-                <div class="m_itme_unfolddown">
-                    <h3 class="title plr10">评论<span class="icon icon_direction_right"></span></h3>
-                    <div class="centent p10">
-                        <a href="tel:020-37325592">020-37325592</a>
-                    </div>
-                </div>
-                <!-- 评论 ]] -->
-                
-                <!-- 好友 [[ -->
-                <div class="m_itme_unfolddown">
-                    <h3 class="title plr10">好友<span class="icon icon_direction_right"></span></h3>
-                    <div class="centent p10">
-                        <a href="tel:020-37325592">020-37325592</a>
-                    </div>
-                </div>
-                <!-- 好友 ]] -->
-                
-                
+                <!-- 主要 ]] -->
             </div>
+            
+            
+            
             
         </div>
         <!-- 主要 ]] -->
@@ -139,6 +123,9 @@
                 
                 //列表向展开
                 itmeUnfolddown();
+                
+                //邀请入驻
+                accumulativeBtn("inviteBtn");
 			}
 			init();
 		</script>

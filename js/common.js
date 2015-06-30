@@ -3,7 +3,7 @@
 /**
  * @name     :collectWeb
  * @author   :Nice
- * @dependent:收藏本站
+ * @explain:收藏本站
  */
 function addFavorite() {
 
@@ -24,6 +24,86 @@ function addFavorite() {
 
 }
 /* @end **/
+
+/**
+* @name     :itmeUnfolddown
+* @author   :Nice
+* @explain  :列表下展开
+*/
+function itmeUnfolddown(){
+    var e=$(".m_itme_unfolddown");
+    var title=e.find('.title');
+
+    title.click(function(event) {
+        $(this).toggleClass('hover');
+    });
+}
+/* @end **/
+
+
+/**
+* @name     :accumulativeBtn
+* @author   :Nice
+* @explain  :按钮累计提示
+*/
+function accumulativeBtn(id){
+    var e=$("#"+id);
+    var input=e.find('input');
+    var plus=e.find('.plus');
+    var original=e.find('.original');
+
+    var inputVal=parseInt(input.val());
+    
+    if (inputVal==0) {
+        plus.css({
+            display: 'inline-block'
+        });
+    };
+
+    if (inputVal>0) {
+        plus.css({
+            display: 'inline-block'
+        });
+
+        original.css({
+            display: 'inline-block'
+        });
+    };
+
+    input.change(function(event) {
+        if($("#"+id+"input:checked")){
+            inputVal=inputVal+1;
+            input.val(inputVal);
+            plus.html("+"+inputVal);
+        }
+        if($("#"+id+"input")){
+            inputVal=inputVal-1;
+            input.val(inputVal);
+            original.html("+"+inputVal);
+        }
+
+        if (inputVal==0) {
+            original.css({
+                display: 'none'
+            });
+        };
+        return inputVal
+    });
+}
+/* @end **/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
 * @name		:

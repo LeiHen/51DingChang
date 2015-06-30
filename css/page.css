@@ -40,18 +40,27 @@
 .personal .span4:nth-child(9):hover{background: #16A085;}
 
 
-
-
-
-
-
 /* stadium_detail */
 .stadium_detail{
 
 }
-.stadium_detail .map{
-	height: 300px;
+.stadium_detail .name{
+	color: #323232;
+	font-weight: 400;
 }
+
+.stadium_detail .map{
+	height: 200px;
+}
+
+
+/* 邀请入驻 */
+.stadium_detail .invite_box{
+
+}
+
+
+
 
 
 /* css3 动画 */
@@ -62,7 +71,8 @@
 .u_btn,
 .m_itme_unfolddownm,
 .m_itme_unfolddown .title,
-.m_itme_unfolddown .title .icon{
+.m_itme_unfolddown .title .icon,
+.u_btn_accumulative .hint{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
