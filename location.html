@@ -33,590 +33,598 @@
         <!-- nav top [[ -->
         <header class="header plr10">
             <p>选择地区</p>
-            <a href="javascript:history.go(-1);" class="return">
+<!--
+            <a href="javascript:window.history.forward();" class="return">
                 <span class="icon icon_reply"></span>
             </a>
+-->
             
         </header>
         <!-- nav top ]] -->
         
         <!-- 主要 [[ -->
-        <div class="main">
+        <div class="main location" id="main">
             <!-- 定位 [[ -->     
             <div class="m_itme">
                 <h3 class="title plr10 gps"><span class="icon icon_gps_not"></span>定位</h3>
                 <ul class="content p10">
-                    <li class="itme">广州</li>
+                    <li class="itme"><a href="stadiumList.html" class="link block">广州</a></li>
                 </ul>
             </div>
             <!-- 定位 ]] --> 
             <!-- 定位 成功 失败 反馈 -->
+            
            
             <!-- 热门地区 [[ -->
-            <div class="m_itme ">
+            <div class="m_itme">
                 <h3 class="title plr10">热门地区</h3>
-                <ul class="content g_col_3 plr10">
-                    <li class="itme span"><a href="javascript:void(0);" class="link">广州</a></li>
-                    <li class="itme span"><a href="javascript:void(0);" class="link">北京</a></li>
-                    <li class="itme span"><a href="javascript:void(0);" class="link">上海</a></li>
-                    <li class="itme span"><a href="javascript:void(0);" class="link">杭州</a></li>
-                    <li class="itme span"><a href="javascript:void(0);" class="link">天津</a></li>
-                    <li class="itme span"><a href="javascript:void(0);" class="link">深圳</a></li>
+                <ul class="content g_col_3 plr10 m_itme_txt2">
+                    <li class="itme span"><a href="stadiumList.html" class="link">广州</a></li>
+                    <li class="itme span"><a href="stadiumList.html" class="link">北京</a></li>
+                    <li class="itme span"><a href="stadiumList.html" class="link">上海</a></li>
+                    <li class="itme span"><a href="stadiumList.html" class="link">杭州</a></li>
+                    <li class="itme span"><a href="stadiumList.html" class="link">天津</a></li>
+                    <li class="itme span"><a href="stadiumList.html" class="link">深圳</a></li>
                 </ul>
             </div>
             <!-- 热门地区 ]] -->
             
             <!-- 首字母检索 [[ -->
-            <div class="m_itme_2 u_itme_color">
-                <h3 class="u_title padding_lr">省份首字母</h3>
+            <div class="m_itme index">
+                <h3 class="title plr10">省份首字母</h3>
+                
+                <div class="content plr10">
+                    <ul class="g_row_fluid">
+                        <li class="itme span2"><a href="#a" class="link u_btn e_btn_fillet">a</a></li>
 
-                <ul class="content padding_lr g_col_5">
-                    <li class="itme span"><a href="#a" class="link u_btn2_gray">a</a></li>
-                    <li class="itme span"><a href="" class="link u_btn2_gray e_btn2_gray_disabled">b</a></li>
-                    <li class="itme span"><a href="#c" class="link u_btn2_gray">c</a></li>
-                    <li class="itme span"><a href="#d" class="link u_btn2_gray">d</a></li>
-                    <li class="itme span"><a href="#e" class="link u_btn2_gray">e</a></li>
-                    <li class="itme span"><a href="#f" class="link u_btn2_gray">f</a></li>
-                    <li class="itme span"><a href="#g" class="link u_btn2_gray">g</a></li>
-                    <li class="itme span"><a href="#h" class="link u_btn2_gray">h</a></li>
-                    <li class="itme span"><a href="#i" class="link u_btn2_gray">i</a></li>
-                    <li class="itme span"><a href="#j" class="link u_btn2_gray">j</a></li>
-                    <li class="itme span"><a href="#k" class="link u_btn2_gray">k</a></li>
-                    <li class="itme span"><a href="#l" class="link u_btn2_gray">l</a></li>
-                    <li class="itme span"><a href="#n" class="link u_btn2_gray">n</a></li>
-                    <li class="itme span"><a href="#m" class="link u_btn2_gray">m</a></li>
-                    <li class="itme span"><a href="#o" class="link u_btn2_gray">o</a></li>
-                    <li class="itme span"><a href="#p" class="link u_btn2_gray">p</a></li>
-                    <li class="itme span"><a href="#q" class="link u_btn2_gray">q</a></li>
-                    <li class="itme span"><a href="#r" class="link u_btn2_gray">r</a></li>
-                    <li class="itme span"><a href="#s" class="link u_btn2_gray">s</a></li>
-                    <li class="itme span"><a href="#t" class="link u_btn2_gray">t</a></li>
-                    <li class="itme span"><a href="#u" class="link u_btn2_gray">u</a></li>
-                    <li class="itme span"><a href="#v" class="link u_btn2_gray">v</a></li>
-                    <li class="itme span"><a href="#w" class="link u_btn2_gray">w</a></li>
-                    <li class="itme span"><a href="#s" class="link u_btn2_gray">x</a></li>
-                    <li class="itme span"><a href="#y" class="link u_btn2_gray">y</a></li>
-                    <li class="itme span"><a href="#z" class="link u_btn2_gray">z</a></li>
-                </ul>
+                        <li class="itme span2"><a href="javascript:void(0);" class="link u_btn e_btn_fillet disabled">b</a></li>
+
+                        <li class="itme span2"><a href="#c" class="link u_btn e_btn_fillet">c</a></li>
+                        <li class="itme span2"><a href="#d" class="link u_btn e_btn_fillet">d</a></li>
+                        <li class="itme span2"><a href="#e" class="link u_btn e_btn_fillet">e</a></li>
+                        <li class="itme span2"><a href="#f" class="link u_btn e_btn_fillet">f</a></li>
+                        <li class="itme span2"><a href="#g" class="link u_btn e_btn_fillet">g</a></li>
+                        <li class="itme span2"><a href="#h" class="link u_btn e_btn_fillet">h</a></li>
+                        <li class="itme span2"><a href="#i" class="link u_btn e_btn_fillet">i</a></li>
+                        <li class="itme span2"><a href="#j" class="link u_btn e_btn_fillet">j</a></li>
+                        <li class="itme span2"><a href="#k" class="link u_btn e_btn_fillet">k</a></li>
+                        <li class="itme span2"><a href="#l" class="link u_btn e_btn_fillet">l</a></li>
+                        <li class="itme span2"><a href="#n" class="link u_btn e_btn_fillet">n</a></li>
+                        <li class="itme span2"><a href="#m" class="link u_btn e_btn_fillet">m</a></li>
+                        <li class="itme span2"><a href="#o" class="link u_btn e_btn_fillet">o</a></li>
+                        <li class="itme span2"><a href="#p" class="link u_btn e_btn_fillet">p</a></li>
+                        <li class="itme span2"><a href="#q" class="link u_btn e_btn_fillet">q</a></li>
+                        <li class="itme span2"><a href="#r" class="link u_btn e_btn_fillet">r</a></li>
+                        <li class="itme span2"><a href="#s" class="link u_btn e_btn_fillet">s</a></li>
+                        <li class="itme span2"><a href="#t" class="link u_btn e_btn_fillet">t</a></li>
+                        <li class="itme span2"><a href="#u" class="link u_btn e_btn_fillet">u</a></li>
+                        <li class="itme span2"><a href="#v" class="link u_btn e_btn_fillet">v</a></li>
+                        <li class="itme span2"><a href="#w" class="link u_btn e_btn_fillet">w</a></li>
+                        <li class="itme span2"><a href="#x" class="link u_btn e_btn_fillet">x</a></li>
+                        <li class="itme span2"><a href="#y" class="link u_btn e_btn_fillet">y</a></li>
+                        <li class="itme span2"><a href="#z" class="link u_btn e_btn_fillet">z</a></li>
+                    </ul>
+                </div>
 
             </div>
             <!-- 首字母检索 [[ -->
             
             <!-- 地区列表 [[ -->
-            <div class="m_itme_2 region">
+            <div class="m_itme">
                
                <div class="province" id="a">
-                    <h3 class="u_title padding_lr">a</h3>
+                    <h3 class="title plr10">a</h3>
                     
-                    <h4 class="sub_title padding_lr">安徽</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">安庆</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">蚌埠</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">亳州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">池州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">滁州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">阜阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">合肥</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">淮北</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">淮南</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">黄山</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">六安</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">马鞍山</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">铜陵</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">芜湖</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">宿州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">宣城</a></li>
+                    <h4 class="title_sub plr10">安徽</h4>
+                    
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">安庆</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">蚌埠</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">亳州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">池州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">滁州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">阜阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">合肥</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">淮北</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">淮南</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">黄山</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">六安</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">马鞍山</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">铜陵</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">芜湖</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">宿州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">宣城</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">澳门</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">澳门</a></li>
+                    
+                    <h4 class="title_sub plr10">澳门</h4>                    
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">澳门</a></li>
                     </ul>
                 </div>
                 
-                <div class="province" id="b">
-                    <h3 class="u_title padding_lr">b</h3>
+                <div class="province" id="b">                    
+                    <h3 class="title plr10">b</h3>
                     
-                    <h4 class="sub_title padding_lr">北京</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">北京</a></li>
+                    <h4 class="title_sub plr10">北京</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">北京</a></li>
                     </ul>
                 </div>
                 
                 <div class="province">
-                    <h3 class="u_title padding_lr">f</h3>
+                    <h3 class="title plr10">f</h3>
                     
-                    <h4 class="sub_title padding_lr">福建</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">福州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">龙岩</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">南平</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">宁德</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">莆田</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">泉州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">三明</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">厦门</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">漳州</a></li>
+                    <h4 class="title_sub plr10">福建</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">福州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">龙岩</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">南平</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">宁德</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">莆田</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">泉州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">三明</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">厦门</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">漳州</a></li>
                     </ul>
                 </div>
                 
                 
                 <div class="province" id="g">
-                    <h3 class="u_title padding_lr">g</h3>
+                    <h3 class="title plr10">g</h3>
                     
-                    <h4 class="sub_title padding_lr">甘肃</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">白银</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">定西</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">嘉峪关</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">金昌</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">酒泉</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">兰州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">陇南</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">平凉</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">庆阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">天水</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">武威</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">张掖</a></li>
+                    <h4 class="title_sub plr10">甘肃</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">白银</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">定西</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">嘉峪关</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">金昌</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">酒泉</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">兰州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">陇南</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">平凉</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">庆阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">天水</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">武威</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">张掖</a></li>
                     </ul>
 
-                    <h4 class="sub_title padding_lr">广东</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">潮州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">东莞</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">佛山</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">广州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">河源</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">惠州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">江门</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">揭阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">茂名</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">梅州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">清远</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">汕头</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">汕尾</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">韶关</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">深圳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">阳江</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">云浮</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">湛江</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">肇庆</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">中山</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">珠海</a></li>
+                    <h4 class="title_sub plr10">广东</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">潮州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">东莞</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">佛山</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">广州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">河源</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">惠州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">江门</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">揭阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">茂名</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">梅州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">清远</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">汕头</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">汕尾</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">韶关</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">深圳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">阳江</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">云浮</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">湛江</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">肇庆</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">中山</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">珠海</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">广西壮族</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">百色</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">北海</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">崇左</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">防城港</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">贵港</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">桂林</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">河池</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">贺州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">来宾</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">柳州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">南宁</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">钦州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">梧州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">玉林</a></li>
+                    <h4 class="title_sub plr10">广西壮族</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">百色</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">北海</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">崇左</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">防城港</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">贵港</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">桂林</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">河池</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">贺州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">来宾</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">柳州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">南宁</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">钦州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">梧州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">玉林</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">贵州</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">安顺</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">毕节</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">贵阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">六盘水</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">铜仁</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">遵义</a></li>
+                    <h4 class="title_sub plr10">贵州</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">安顺</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">毕节</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">贵阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">六盘水</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">铜仁</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">遵义</a></li>
                     </ul>
                 </div>
                 
                 <div class="province" id="h">
-                    <h3 class="u_title padding_lr">h</h3>
+                    <h3 class="title plr10">h</h3>
                     
-                    <h4 class="sub_title padding_lr">海南</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">海口</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">三亚</a></li>
+                    <h4 class="title_sub plr10">海南</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">海口</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">三亚</a></li>
                     </ul>
 
-                    <h4 class="sub_title padding_lr">河北</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">保定</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">沧州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">承德</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">邯郸</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">衡水</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">廊坊</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">秦皇岛</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">石家庄</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">唐山</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">邢台</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">张家口</a></li>
+                    <h4 class="title_sub plr10">河北</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">保定</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">沧州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">承德</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">邯郸</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">衡水</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">廊坊</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">秦皇岛</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">石家庄</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">唐山</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">邢台</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">张家口</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">河南</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">安阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">邓州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">巩义</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">鹤壁</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">济源</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">焦作</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">开封</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">洛阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">漯河</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">南阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">平顶山</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">濮阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">汝州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">三门峡</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">商丘</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">新乡</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">信阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">许昌</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">永城</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">郑州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">周口</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">驻马店</a></li>
+                    <h4 class="title_sub plr10">河南</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">安阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">邓州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">巩义</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">鹤壁</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">济源</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">焦作</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">开封</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">洛阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">漯河</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">南阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">平顶山</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">濮阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">汝州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">三门峡</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">商丘</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">新乡</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">信阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">许昌</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">永城</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">郑州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">周口</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">驻马店</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">黑龙江</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">大庆</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">哈尔滨</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">鹤岗</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">黑河</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">鸡西</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">佳木斯</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">牡丹江</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">七台河</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">齐齐哈尔</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">双鸭山</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">绥化</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">伊春</a></li>
+                    <h4 class="title_sub plr10">黑龙江</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">大庆</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">哈尔滨</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">鹤岗</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">黑河</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">鸡西</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">佳木斯</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">牡丹江</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">七台河</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">齐齐哈尔</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">双鸭山</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">绥化</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">伊春</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">湖北</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">鄂州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">黄冈</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">黄石</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">荆门</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">荆州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">潜江</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">十堰</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">随州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">天门</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">武汉</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">仙桃</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">咸宁</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">襄樊</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">孝感</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">宜昌</a></li>
+                    <h4 class="title_sub plr10">湖北</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">鄂州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">黄冈</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">黄石</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">荆门</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">荆州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">潜江</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">十堰</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">随州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">天门</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">武汉</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">仙桃</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">咸宁</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">襄樊</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">孝感</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">宜昌</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">湖南</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">常德</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">郴州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">衡阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">怀化</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">娄底</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">邵阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">湘潭</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">益阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">永州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">岳阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">张家界</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">长沙</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">株洲</a></li>
+                    <h4 class="title_sub plr10">湖南</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">常德</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">郴州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">衡阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">怀化</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">娄底</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">邵阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">湘潭</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">益阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">永州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">岳阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">张家界</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">长沙</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">株洲</a></li>
                     </ul>
                     
                 </div>
                 
                 <div class="province" id="j">
-                    <h3 class="u_title padding_lr">j</h3>
+                    <h3 class="title plr10">j</h3>
                     
 
-                    <h4 class="sub_title padding_lr">吉林</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">白城</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">白山</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">吉林</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">辽源</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">四平</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">松原</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">长春</a></li>
+                    <h4 class="title_sub plr10">吉林</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">白城</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">白山</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">吉林</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">辽源</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">四平</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">松原</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">长春</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">江苏</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">常州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">淮安</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">连云港</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">南京</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">南通</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">苏州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">泰州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">无锡</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">宿迁</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">徐州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">盐城</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">扬州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">镇江</a></li>
+                    <h4 class="title_sub plr10">江苏</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">常州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">淮安</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">连云港</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">南京</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">南通</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">苏州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">泰州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">无锡</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">宿迁</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">徐州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">盐城</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">扬州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">镇江</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">江西</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">抚州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">赣州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">吉安</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">景德镇</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">九江</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">南昌</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">萍乡</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">上饶</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">新余</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">宜春</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">鹰潭</a></li>
+                    <h4 class="title_sub plr10">江西</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">抚州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">赣州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">吉安</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">景德镇</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">九江</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">南昌</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">萍乡</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">上饶</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">新余</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">宜春</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">鹰潭</a></li>
                     </ul>
                 </div>
                 
                 <div class="province" id="l">
-                    <h3 class="u_title padding_lr">l</h3>
+                    <h3 class="title plr10">l</h3>
                     
-                    <h4 class="sub_title padding_lr">辽宁</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">鞍山</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">本溪</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">朝阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">大连</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">丹东</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">抚顺</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">阜新</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">葫芦岛</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">锦州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">辽阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">盘锦</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">沈阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">铁岭</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">营口</a></li>
+                    <h4 class="title_sub plr10">辽宁</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">鞍山</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">本溪</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">朝阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">大连</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">丹东</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">抚顺</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">阜新</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">葫芦岛</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">锦州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">辽阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">盘锦</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">沈阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">铁岭</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">营口</a></li>
                     </ul>
                     
                 </div>
                 
                 <div class="province" id="n">
-                    <h3 class="u_title padding_lr">n</h3>
+                    <h3 class="title plr10">n</h3>
                     
-                    <h4 class="sub_title padding_lr">内蒙古</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">巴彦淖尔</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">包头</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">赤峰</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">鄂尔多斯</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">呼和浩特</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">呼伦贝尔</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">通辽</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">乌海</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">乌兰察布</a></li>
+                    <h4 class="title_sub plr10">内蒙古</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">巴彦淖尔</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">包头</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">赤峰</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">鄂尔多斯</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">呼和浩特</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">呼伦贝尔</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">通辽</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">乌海</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">乌兰察布</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">宁夏回族</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">固原</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">石嘴山</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">吴忠</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">银川</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">中卫</a></li>
+                    <h4 class="title_sub plr10">宁夏回族</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">固原</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">石嘴山</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">吴忠</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">银川</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">中卫</a></li>
                     </ul>
 
                 </div>
                 
                 <div class="province" id="q">
-                    <h3 class="u_title padding_lr">q</h3>
+                    <h3 class="title plr10">q</h3>
                     
-                    <h4 class="sub_title padding_lr">青海</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">西宁</a></li>
+                    <h4 class="title_sub plr10">青海</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">西宁</a></li>
                     </ul>
 
                 </div>
                 
                 <div class="province" id="s">
-                    <h3 class="u_title padding_lr">s</h3>
+                    <h3 class="title plr10">s</h3>
                     
-                    <h4 class="sub_title padding_lr">上海</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">上海</a></li>
+                    <h4 class="title_sub plr10">上海</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">上海</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">山东</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">滨州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">德州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">东营</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">菏泽</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">济南</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">济宁</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">莱芜</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">聊城</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">临沂</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">青岛</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">日照</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">泰安</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">威海</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">潍坊</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">烟台</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">枣庄</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">淄博</a></li>
+                    <h4 class="title_sub plr10">山东</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">滨州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">德州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">东营</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">菏泽</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">济南</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">济宁</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">莱芜</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">聊城</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">临沂</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">青岛</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">日照</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">泰安</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">威海</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">潍坊</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">烟台</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">枣庄</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">淄博</a></li>
                     </ul>
 
-                    <h4 class="sub_title padding_lr">山西</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">大同</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">晋城</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">晋中</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">临汾</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">吕梁</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">朔州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">太原</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">忻州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">阳泉</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">运城</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">长治</a></li>
+                    <h4 class="title_sub plr10">山西</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">大同</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">晋城</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">晋中</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">临汾</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">吕梁</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">朔州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">太原</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">忻州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">阳泉</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">运城</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">长治</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">陕西</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">安康</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">宝鸡</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">汉中</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">商洛</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">铜川</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">渭南</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">西安</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">咸阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">延安</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">榆林</a></li>
+                    <h4 class="title_sub plr10">陕西</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">安康</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">宝鸡</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">汉中</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">商洛</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">铜川</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">渭南</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">西安</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">咸阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">延安</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">榆林</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">四川</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">巴中</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">成都</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">达州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">德阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">广安</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">广元</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">乐山</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">泸州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">眉山</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">绵阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">南充</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">内江</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">攀枝花</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">遂宁</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">雅安</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">宜宾</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">资阳</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">自贡</a></li>
+                    <h4 class="title_sub plr10">四川</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">巴中</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">成都</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">达州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">德阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">广安</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">广元</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">乐山</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">泸州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">眉山</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">绵阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">南充</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">内江</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">攀枝花</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">遂宁</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">雅安</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">宜宾</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">资阳</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">自贡</a></li>
                     </ul>
                     
                 </div>
                 
                 <div class="province" id="t">
-                    <h3 class="u_title padding_lr">t</h3>
+                    <h3 class="title plr10">t</h3>
                     
-                    <h4 class="sub_title padding_lr">天津</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">天津</a></li>
+                    <h4 class="title_sub plr10">天津</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">天津</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">台湾</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">台湾</a></li>
+                    <h4 class="title_sub plr10">台湾</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">台湾</a></li>
                     </ul>
 
                 </div>
                 
                 
                 <div class="province" id="x">
-                    <h3 class="u_title padding_lr">x</h3>
+                    <h3 class="title plr10">x</h3>
                     
-                    <h4 class="sub_title padding_lr">香港</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">香港</a></li>
+                    <h4 class="title_sub plr10">香港</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">香港</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">西藏</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">拉萨</a></li>
+                    <h4 class="title_sub plr10">西藏</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">拉萨</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">新疆维吾尔</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">阿拉尔</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">北屯</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">克拉玛依</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">石河子</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">图木舒克</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">乌鲁木齐</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">五家渠</a></li>
+                    <h4 class="title_sub plr10">新疆维吾尔</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">阿拉尔</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">北屯</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">克拉玛依</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">石河子</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">图木舒克</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">乌鲁木齐</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">五家渠</a></li>
                     </ul>
 
                 </div>
                 
                 <div class="province" id="y">
-                    <h3 class="u_title padding_lr">y</h3>
+                    <h3 class="title plr10">y</h3>
                     
-                    <h4 class="sub_title padding_lr">云南</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">保山</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">昆明</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">丽江</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">临沧</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">曲靖</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">思茅</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">玉溪</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">昭通</a></li>
+                    <h4 class="title_sub plr10">云南</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">保山</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">昆明</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">丽江</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">临沧</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">曲靖</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">思茅</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">玉溪</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">昭通</a></li>
                     </ul>
 
                 </div>
                 
                 <div class="province" id="z">
-                    <h3 class="u_title padding_lr">z</h3>
+                    <h3 class="title plr10">z</h3>
                     
-                    <h4 class="sub_title padding_lr">浙江</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">杭州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">湖州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">嘉兴</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">金华</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">丽水</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">宁波</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">衢州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">绍兴</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">台州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">温州</a></li>
-                        <li class="itme span"><a href="javascript:void(0);" class="link">舟山</a></li>
+                    <h4 class="title_sub plr10">浙江</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">杭州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">湖州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">嘉兴</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">金华</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">丽水</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">宁波</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">衢州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">绍兴</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">台州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">温州</a></li>
+                        <li class="itme span"><a href="stadiumList.html" class="link">舟山</a></li>
                     </ul>
                     
-                    <h4 class="sub_title padding_lr">重庆</h4>
-                    <ul class="content padding_lr g_col_3">
-                        <li class="itme span"><a href="javascript:void(0);" class="link">重庆</a></li>
+                    <h4 class="title_sub plr10">重庆</h4>
+                    <ul class="content plr10 g_col_3 m_itme_txt2">
+                        <li class="itme span"><a href="stadiumList.html" class="link">重庆</a></li>
                     </ul>
 
                 </div>
                 
-                
-                
+            
                
-                <div class="padding_lr">
-                    <a href="#head" class="u_btn e_btn_gray w_per100 more"><div class="p">返回顶部</div></a>
+                <div class="p10">
+                    <a href="#main" class="u_btn">返回顶部</a>
                 </div>
 
                
@@ -634,13 +642,13 @@
         <script src="js/common.js"></script>
         <script src="js/page.js"></script>
         
-        
-        
-    
+
         <script type="text/javascript">	
 			//初始化 统一入口
 			function init(){
-                
+                //顶部固定
+                $(".header").addClass("relaitver");
+
 			}
 			init();
 		</script>

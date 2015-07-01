@@ -47,6 +47,14 @@
 .stadium_detail .name{
 	color: #323232;
 	font-weight: 400;
+	padding-top: 10px;
+}
+.stadium_detail .price{
+	color: #cccccc;
+	font-size: 1.2em;
+}
+.stadium_detail .function{
+	padding-top:40px;
 }
 
 .stadium_detail .map{
@@ -57,6 +65,54 @@
 /* 邀请入驻 */
 .stadium_detail .invite_box{
 
+}
+
+
+/* 地区 */
+.location{
+
+}
+
+.location .gps{
+
+}
+.location .gps:hover,
+.location .gps:active{
+	
+}
+.location .gps:hover .icon,
+.location .gps:active .icon{
+	
+}
+.location .gps:hover .icon:before,
+.location .gps:active .icon:before{
+	content: "\e0a3";
+}
+
+.location .index{
+
+}
+.location .index .g_row_fluid{
+
+}
+.location .index .g_row_fluid .span2:nth-child(6n+1){
+	margin-left: 0;
+}
+
+.location .index .g_row_fluid .span2{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+.location .title{
+	text-transform: uppercase;
+}
+.location .title_sub{
+	color: #398de3;
+}
+.location .link{
+	text-transform: uppercase;
 }
 
 
