@@ -3,6 +3,7 @@
 /*全局*/
 body{
 	font-size:62.5%;
+	color: #323232;
 }
 
 a:link,a:visited,a:hover,a:active{
@@ -41,6 +42,11 @@ a:link,a:visited,a:hover,a:active{
 .bg_celadon:hover{background: #7f8c8d;}
 .bg_turquoise{background:#1ABC9C;}
 .bg_turquoise:hover{background: #16A085;}
+.bg_red{background:#e74c3c;}
+.bg_red:hover{background: #c0392b;}
+
+.bg_gray{background:#f0f0f0; }
+.bg_gray:hover{background: #f0f0f0;}
 
 
 /* 头部 */
@@ -108,6 +114,9 @@ a:link,a:visited,a:hover,a:active{
 
 .g_col_6{ }
 .g_col_6 .span{ width: 16.6666666666666%; float: left; }
+
+.g_col_7{ }
+.g_col_7 .span{ width: 14.28571428571428%; float: left; }
 
 .g_col_2575{}
 .g_col_2575 .w_per25{ width: 25%; float: left;}
@@ -360,73 +369,130 @@ input[]{}
 .m_itme_txt2 .itme .link:hover{ display: block; font-size: 1em; color: #398de3; }
 
 
+
 /* 步骤 */
-.m_step{
+.m_step{ padding-bottom: 1.8em; width: 270px; margin:auto; }
+.m_step .itme{ position: relative; text-align: center; margin: auto; }
+.m_step .itme .line{ width: 100%; height: 2px; background: #e2e2e2; position: absolute; right: 0; top:4px; z-index: 1; }
+.m_step .itme .circle{ background: #e2e2e2; border-radius: 50%; width: 10px; height: 10px; position: relative; margin: 0 0 0 auto; text-align: right; z-index: 2; }
+.m_step .itme .circle .within{ position: absolute; background: #fff; border-radius: 50%; width: 4px; height: 4px; left: 0; right: 0; top:0; bottom: 0; margin:auto; display: block; }
+
+.m_step .itme:first-child{ width: 10px; margin-left:30px; }
+.m_step .itme:first-child .line{ display: none; }
+
+.m_step .itme:last-child{ margin-right:30px; }
+.m_step .itme:last-child .line{ }
+
+.m_step .itme .txt{ position: absolute; top: 100%; right: 0; display: block; width: 70px; text-align: center; margin: 0 5px 0 0; font-size: 1.4em; -webkit-transform:translate3d(50%,0px,0px); -moz-transform:translate3d(50%,0px,0px); -ms-transform:translate3d(50%,0px,0px); -o-transform:translate3d(50%,0px,0px); transform:translate3d(50%,0px,0px); }
+
+/* 当前步骤 状态 */
+.m_step .present{ }
+.m_step .present .line{ background: #f66a00; }
+.m_step .present .circle{ background: #f66a00; }
+
+
+/* 
+	下单流程
+*/
+.m_orders{
+
+}
+.m_orders .step{ }
+
+.m_orders .time{ margin: 10px 0; background: #f0f0f0; }
+.m_orders .time .itme{ padding:10px 0; text-align: center; font-size: 1.2em; line-height: 1.6em; position:relative; }
+.m_orders .time .itme .border{ border-left: 1px solid #fefefe; }
+.m_orders .time .itme:first-child .border{ border-left: none; }
+
+.m_orders .time .itme:hover,
+.m_orders .time .hover{ background: #f66a00; color:#fff; }
+.m_orders .time .itme:hover .border,
+.m_orders .time .hover .border{ border-left: 1px solid #f66a00; -webkit-transition:border-left .4s ease-out; -moz-transition:border-left .4s ease-out; -ms-transition:border-left .4s ease-out; -o-transition:border-left .4s ease-out; transition:border-left .4s ease-out; }
+
+.m_orders .state{
+	padding:10px 0;
+	overflow: hidden; 
+}
+.m_orders .state .list{
+	text-align: center;
+	line-height: 20px;
+	font-size: 1.2em;
+	vertical-align: bottom;
+}
+.m_orders .state .list .color_lump{
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	line-height: 20px;
+	display: inline-block;
+	color: #fff;
+}
+
+.m_orders .state .cannot .color_lump{
+	background:#f0f0f0;
+	position: relative;
 	overflow: hidden;
 }
-.m_step .itme{
-	/*text-align: center;*/
-	position: relative;
-}
-.m_step .itme .line{
-	width: 100%;
-	height: 2px;
-	background: #f66a00;
+.m_orders .state .cannot .color_lump::before{
+	content: "";
 	position: absolute;
-	left: 0;
-	top:4px;
-	z-index: 1;
-}
-.m_step .itme .circle{
-	background: #f66a00;
-	border-radius: 50%;
-	width: 10px;
-	height: 10px;
-	position: relative;
-	/*margin: auto;*/
-	z-index: 2;
-}
-.m_step .itme .circle .within{
-	position: absolute;
-	background: #fff;
-	/*border: 2px solid #fff;*/
-	border-radius: 50%;
-	width: 4px;
-	height: 4px;
-	left: 0;
-	right: 0;
-	top:0;
-	bottom: 0;
-	margin:auto; 
+	top: 50%;
 	display: block;
-
+	height: 1px;
+	width:100%;
+	
+	background: #999999;
+	-webkit-transform:rotate(45deg);
+	-mos-transform:rotate(45deg);
+	-mz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
 }
 
+/*  状态 */
+.m_orders .optional{
 
-.m_step .itme:first-child .line{
-	/*left: 50%;*/
 }
-.m_step .itme:last-child .line{
-	/*left: -50%;*/
+.m_orders .selected{
+
 }
+.m_orders .sold{
 
-
-.m_step .present{
+}
+.m_orders .cannot{
 	
 }
-.m_step .present .line{
-	background: #e2e2e2;
+.m_orders .cannot .color_lump{
+	background:#f0f0f0;
+	position: relative;
+	overflow: hidden;
 }
-.m_step .present .circle{
-	background: #e2e2e2;
+.m_orders .cannot .color_lump::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	display: block;
+	height: 1px;
+	width:100%;
+	
+	background: #999999;
+	-webkit-transform:rotate(45deg);
+	-mos-transform:rotate(45deg);
+	-mz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	transform:rotate(45deg);
 }
 
 
 
-/*
-.{
-	background: #cccccc;
-}*/
+.m_orders .choice{
+
+}
+.m_orders .choice{
+	
+}
+
+/* m_ */
 
 
 /*

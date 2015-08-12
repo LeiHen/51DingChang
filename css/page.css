@@ -128,7 +128,8 @@
 .m_itme_unfolddownm,
 .m_itme_unfolddown .title,
 .m_itme_unfolddown .title .icon,
-.u_btn_accumulative .hint{
+.u_btn_accumulative .hint,
+.m_orders .time .itme{
 	-webkit-transition:all .4s ease-out;
 	-moz-transition:all .4s ease-out;
 	-ms-transition:all .4s ease-out;
